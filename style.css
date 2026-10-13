@@ -266,9 +266,23 @@ main { max-width: 1120px; margin: 0 auto; padding: 0 6vw; }
   color: var(--ink);
 }
 
+.work-list { list-style: none; margin: 0 0 1.2rem; padding: 0; display: grid; gap: 0.9rem; }
+.work-list li {
+  border-left: 2px solid var(--line);
+  padding-left: 1rem;
+  color: var(--ink-soft);
+  max-width: 68ch;
+}
+.work-list strong { color: var(--ink); font-weight: 600; }
+
 /* Grids */
 .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1.6rem; }
 .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.2rem; }
+
+.stack-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.2rem; }
+.stack-grid .card { padding: 1.4rem; }
+.stack-grid .card-label { margin-bottom: 0.9rem; }
+.card-text { margin: 0; color: var(--ink-soft); }
 
 .card {
   background: var(--surface);
@@ -292,6 +306,7 @@ main { max-width: 1120px; margin: 0 auto; padding: 0 6vw; }
 .edu-meta { font-family: var(--font-mono); font-size: 0.78rem; color: var(--ink-soft); margin: 0.15rem 0 0; }
 
 .pub-title { font-weight: 600; margin: 0 0 0.3rem; }
+.card-sep { border: 0; border-top: 1px solid var(--line); margin: 1.4rem 0; }
 .pub-desc { color: var(--ink-soft); margin: 0.9rem 0 0; }
 
 /* Projects */
